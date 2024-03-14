@@ -1,0 +1,23 @@
+{
+    "name": "Keyfactor",
+    "background": "#191919",
+    "black": "#191919",
+    "blue": "#89A3B3",
+    "brightBlack": "#436F91",
+    "brightBlue": "#C5EAFF",
+    "brightCyan": "#95FFEC",
+    "brightGreen": "#B6FF9F",
+    "brightPurple": "#5F61FF",
+    "brightRed": "#FF9371",
+    "brightWhite": "#F1EEEE",
+    "brightYellow": "#FFEDBA",
+    "cursorColor": "#F1EEEE",
+    "cyan": "#68B3A5",
+    "foreground": "#F1EEEE",
+    "green": "#7EB36F",
+    "purple": "#4244B3",
+    "red": "#B3664F",
+    "selectionBackground": "#F1EEEE",
+    "white": "#B3B1B1",
+    "yellow": "#B3A682"
+}
