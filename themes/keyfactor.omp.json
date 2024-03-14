@@ -1,7 +1,7 @@
 {
     "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
     "version": 2,
-    "console_title_template": "{{ .Shell }} in {{ .Folder }}",
+    "console_title_template": "{{ if .Root }}ELEVATED {{ end }}{{ .Shell }} in {{ .Folder }}",
     "palette": {
       "background-color": "transparent",
       "cloud-text-amazon": "#5F61FF",
@@ -11,6 +11,7 @@
       "error-text": "#191919",
       "git-text": "#FF9371",
       "kubernetes-text": "#B6FF9F",
+      "caution-text": "#FFEDBA",
       "symbol-color": "#F1EEEE",
       "timer-text": "#5F61FF"
     },
@@ -27,7 +28,7 @@
             },
             "style": "powerline",
             "powerline_symbol": "",
-            "template": " <p:symbol-color>\uf0a3</> {{ .CurrentDate | date .Format }}  ",
+            "template": "<p:symbol-color>\uf0a3</> {{ .CurrentDate | date .Format }}  ",
             "type": "time"
           },
           {
@@ -133,19 +134,17 @@
         "newline": true,
         "segments": [
           {
-            "background": "p:error-background",
-            "foreground": "p:backgrond-color",
+            "background": "transparent",
+            "foreground": "p:caution-text",
             "style": "diamond",
-            "leading_diamond": "\ue0c7",
-            "trailing_diamond": "\ue0c6",
-            "template": " \uf0e7 ",
+            "template": "\udb81\udca1 \udb81\udf34 ",
             "type": "root"
           },
           {
             "background": "p:background-color",
             "foreground": "p:git-text",
             "style": "plain",
-            "template": "{{ if .Root }}{{ else }}<p:symbol-color> > </>{{ end }}",
+            "template": "{{ if .Root }}{{ else }}<p:symbol-color>\udb85\udfaa </>{{ end }}",
             "type": "text"
           }
         ],
